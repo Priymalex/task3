@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ataro Company</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class = "header_logo">
+    <img id = "logo" src = "atari-dark-logo.svg" alt = "logo">
+    <p class = "site-name">Ataro Company</p>
+    </div>
+    <nav>
+      <a href = "#list1">Маркированный список</a>
+      <a href = "#table1"> Таблица</a>
+      <a href = "#form1"> Форма</a>
+  </nav>
+  </header>
+  <div class = "content">
+  <div class="block">
+  <h2>Маркированный список</h2>
+  <ul id = "list1">
+    <li><a href="http://kubsu.ru/">Переход на главную страницу КУБГУ</a></li>  
+    <li><a href="https://www.kubsu.ru">Переход на главную страницу КУБГУ в https</a></li>
+    <li><a href = "index2.html">Ссылка на внутреннюю страницу</a></li>
+    <li><a href = "index.html">Ссылка на главную страницу</a></li>
+    <li><a href = "#1234">Ссылка на самый лучший текст</a></li>
+    <li><a href = "https://www.kubsu.ru?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li>
+    <li><a href="index.html?id=123"> Ссылка с id</a></li>
+    <li><a href="inside.html">Ссылка на страницу в каталоге</a></li>
+    <li><a href="./about/example.html"> Ссылка в каталоге about</a></li>
+    <li><a href="../index.html">На страницу в каталоге уровнем выше</a></li>
+    <li><a href="../../index.html">На страницу в каталоге 2 уровнями выше</a></li>
+    <li><p> Где-то <a href = "https://www.kubsu.ru">тут</a> контекстная ссылка внутри абзаца</p></li>
+    <li><a href=" https://checkroi.ru/blog/top-kursov-dlya-muzhchin/#Marketing "> Перейти к разделу на другом сайте</a></li>
+    <li><a href = " ">Ссылка с пустым href</a></li>
+    <li><a href="https://www.kubsu.ru/" rel="nofollow">Ссылка с запретом перехода</a></li>
+    <li><noindex><a href="https://www.kubsu.ru/">Ссылка запрещенная для индексации</a></noindex></li>
+    <li><a href="ftp://user:password@ftp.example.com/example.txt">Скачать файл</a></li>
+  </ul>
+  <div class = "images">
+  <img src = "https://img3.procvetok.com/crop/w950/db/2b/db2b0e001f61912bba0fe71ca43a376f.webp" class = "img" alt = "flower">
+  <a href = "https://cs.msu.ru/faculty"><img src = "logo_vmk_so_shriftom.png " class = "img" alt = "logo"></a>
+  <img src="for-map.jpg" alt="Картинка с областями" usemap="#mops" class = "img">
+  </div>
+  <map name="mops">
+    <area shape="circle" coords="80,125,30" href="https://www.kubsu.ru" alt="Круг">
+    <area shape="rect" coords="0,0,75,75" href="https://www.kubsu.ru" alt="Прямоугольник">
+  </map>
+  <p id = "1234">Самые красивые картиночки на сайте</p>
+    <ol>
+      <li><a href="index.html" title="А">Ссылка А</a></li>
+      <li><a href="index.html" title="Б">Ссылка Б</a></li>
+    </ol>
+    </div>
+    <div class = "block" id="block-table">
+    <h2>Таблица вакансий</h2>
+    <table id = "table1">
+      <tr>
+        <th>Вакансия</th>
+        <th>Зарплата</th>
+        <th>Время работы</th>
+        <th>Недельный график</th>
+      </tr>
+      <tr>
+        <td>Frontend-разрабочтик</td>
+        <td colspan="3">Вакансия закрыта</td>
+      </tr>
+      <tr>
+        <td>Backend-разработчик</td>
+        <td>150 000 руб.</td>
+        <td>8:00-15:00</td>
+        <td>Понедельник - пятница</td>
+      </tr>
+      <tr>
+        <td >Аналитик данных</td>
+        <td rowspan = "2">130 000 рублей</td>
+        <td>8:00-15:00</td>
+        <td>Понедельник - пятница</td>
+      </tr>
+       <tr>
+        <td>Менеджер</td>
+        <td>7:00-15:00</td>
+        <td>Понедельник - пятница</td>
+      </tr>
+      <tr>
+        <td>Программист 1С</td>
+        <td>100 000 рублей</td>
+        <td>8:00-15:00</td>
+        <td>Понедельник - четверг</td>
+      </tr>
+    </table>
+  </div>
+  <div class = "block">
+  <h2>HTML форма</h2>
+  <form action="/" method = "POST" id = "form1">
+    <label >ФИО: <br><input  name = "field-name" placeholder  = "Введите ваше ФИО:"><br></label>
+    <label >Телефон<br><input  name = "field-tel" type = "tel" placeholder = "Введите ваш телефон"><br></label>
+    <label >Почта<br><input  name = "field-email" type = "email" placeholder = "Введите вашу почту"><br></label>
+    <label >Дата рождения <br><input name = "field-date" type = "date" ><br></label>
+    <label >Пол<br><input name = "radio-group1" type="radio"> Мужской</label>
+    <label ><input name = "radio-group1" type="radio">Женский<br></label>
+    <label > Любимый язык программирования:<br>
+      <select name="favourite-lang" multiple = "multiple">
+        <option value = "Значение1">Pascal</option>
+        <option value = "Значение2">C</option>
+        <option value = "Значение3">C++</option>
+        <option value = "Значение4">JavaScript</option>
+        <option value = "Значение5">PHP</option>
+        <option value = "Значение6">Python</option>
+        <option value = "Значение7">Java</option>
+        <option value = "Значение8">Haskel</option>
+        <option value = "Значение9"> Clojure</option>
+        <option value = "Значение10"> Prolog</option>
+        <option value = "Значение11"> Skala</option>
+      </select><br></label>
+    <label > Биография:<br> <textarea name = "biography"></textarea><br></label>
+    <label> С контрактом ознакомлен(а)<input type = "checkbox"><br></label>
+    <label><input type = "submit" value = "Сохранить"></label>
+  </form>
+  </div>
+  </div>
+  <footer>
+    <p>(с) PriymAlex</p>
+  </footer>
+
+</body>
+</html>
